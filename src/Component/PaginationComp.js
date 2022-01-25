@@ -25,7 +25,7 @@ const usePagination = () => {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "bearer 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",
+        "Authorization": "bearer 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 ",
       },
       body: JSON.stringify({
         query: `
