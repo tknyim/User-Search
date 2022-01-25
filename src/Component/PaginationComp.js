@@ -27,7 +27,7 @@ const usePagination = () => {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `bearer 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`,
+        "Authorization": `bearer ${token}`,
       },
       body: JSON.stringify({
         query: `
@@ -120,6 +120,19 @@ const usePagination = () => {
           <img className="title-icon" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" />
           GitHub User Search
         </h1>
+        <form
+          className="user-token"
+          onSubmit={e => {
+            e.preventDefault()
+            setToken(e.target.elements.query.value)
+          }}
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Insert your personal access token here"
+          />
+        </form>
         <ul className="user-content">
           <li className="button-borders">
             <button
@@ -129,19 +142,6 @@ const usePagination = () => {
               Prev
             </button>
           </li>
-          <form
-            className="user-token"
-            onSubmit={e => {
-              e.preventDefault()
-              setToken(e.target.elements.query.value)
-            }}
-          >
-            <input
-              type="text"
-              name="query"
-              placeholder="Insert your personal access token here"
-            />
-          </form>
           <form
             className="user-search"
             onSubmit={e => {

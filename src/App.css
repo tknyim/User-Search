@@ -68,7 +68,8 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  text-align: center;
+  margin-left: 0;
+  margin-right: 40px;
 }
 
 .user-content li {
