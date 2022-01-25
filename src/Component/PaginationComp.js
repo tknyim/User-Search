@@ -16,6 +16,8 @@ const usePagination = () => {
   const firstPage = lastPage - usersPerPage;
   const currentUsers = results.slice(firstPage, lastPage);
 
+  const [token, setToken] = useState("");
+
   useEffect(() => {
     if (!users) {
       return;
@@ -25,7 +27,7 @@ const usePagination = () => {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
-        "Authorization": "bearer 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 ",
+        "Authorization": `bearer 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`,
       },
       body: JSON.stringify({
         query: `
@@ -127,6 +129,19 @@ const usePagination = () => {
               Prev
             </button>
           </li>
+          <form
+            className="user-token"
+            onSubmit={e => {
+              e.preventDefault()
+              setToken(e.target.elements.query.value)
+            }}
+          >
+            <input
+              type="text"
+              name="query"
+              placeholder="Insert your personal access token here"
+            />
+          </form>
           <form
             className="user-search"
             onSubmit={e => {

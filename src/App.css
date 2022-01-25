@@ -29,6 +29,16 @@
   margin-bottom: 10px;
 }
 
+.user-token {
+  text-align: center;
+}
+
+.user-token input {
+  height: 30px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
 .user-table {
   display: flex;
   justify-content: center;
