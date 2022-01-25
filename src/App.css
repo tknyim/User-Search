@@ -1,0 +1,100 @@
+.header-nav {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.39);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.title-icon {
+  height: 28px;
+  width: auto;
+  padding-right: 3px;
+}
+
+.user-search {
+  text-align: center;
+}
+
+.user-search input {
+  height: 30px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.user-table {
+  display: flex;
+  justify-content: center;
+}
+
+.user-table th {
+  padding: 30px;
+}
+
+.table-body tr td {
+  padding: 30px;
+}
+
+.profile-avatar {
+  height: 120px;
+  width: auto;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.profile-avatar:hover {
+  border: 3px solid red;
+  cursor: pointer;
+}
+
+.user-content {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.user-content li {
+  padding: 5px 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.user-content ul {
+  text-align: center;
+}
+
+.user-content li.active {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+.button-borders {
+  border: none !important;
+}
+
+.user-content li button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.user-content li button:hover {
+  font-weight: bold;
+}
+
+.user-profiles {
+  padding-top: 200px;
+}
+
+td {
+  font-weight: bold;
+}
