@@ -13,4 +13,4 @@
 
 ## GitHub GraphQL OAuth
 
-To reach the endpoint for the api, you have to authorize your personal access token. Follow this [link](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql) to generate and setup your own personal access token with the correct permissions. Edit the current token on *PaginationComp.js* (line 28) after "bearer" with your new token.
+To reach the endpoint for the api, you have to authorize your personal access token. Follow this [link](https://docs.github.com/en/graphql/guides/forming-calls-with-graphql) to generate and setup your own personal access token with the correct permissions. Once you start the server, you'll see where to insert your personal access token. Afterwardsm you'll be able to search for users! 
